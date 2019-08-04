@@ -1,0 +1,21 @@
+
+<html>
+<body>
+<ul>
+    <il><a href="/helloworld/create">Create Book</a> </il>
+</ul>
+<h1>Books</h1>
+{% for book in books %}
+<div>
+    <h2>{{book.title}}</h2>
+    <p>page number:
+        {{book.page_num}}
+    publish date: {{book.pub_date}}
+        First publish date : {{book.is_first}}
+    </p>
+
+
+</div>
+{% endfor %}
+</body>
+</html>
